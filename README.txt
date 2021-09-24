@@ -34,7 +34,7 @@ The project's main repository is an interface because the ViewModel needs an ins
 of the repository to make the actual network request. But we wouldn't want to make 
 network request when writing unit tests or normal test cases because tests should
 be quick in general. So the approached i took enables test cases to be written
-in another version of a repository aka a fake repository that just simulates the 
+in another version of a repository aka a special repository that just simulates the 
 bahavior of the API but it doesn't make any actual network request. Therefore, I think
 that it is helpful to have the interface and also multiple versions of repository.
 A default repository that makes the network request, and special repositories during
